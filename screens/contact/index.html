@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../../styles/style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <title>Le Homme | Products </title>
+  </head>
+  <body class="flex column">
+    <header class="flex ">
+      <h1><a href="../../index.html">Le Homme</a></h1>
+        <nav class="flex">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../products/index.html">Products</a></li>
+          </ul>
+        </nav>      
+    </header>
+    <main>
+      <div id="contactForm" class="flex column">
+        <h2>Contact Us</h2>
+          <form action="" method="get" class="flex column">
+            <fieldset>
+              <legend>Contact Form</legend>
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+              </div>
+              <div>
+                <label for="subscribe">Subscribe:</label>
+                <div class="flex radio">
+                  <label for="yesSub">Yes</label>
+                  <input type="radio" name="subscribe" value="yes" id="yesSub" required>
+                  <label for="noSub">No</label>
+                  <input type="radio" name="subscribe" value="no" id="noSub" required>
+                </div>
+              </div>
+              <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required>
+              </div>
+              <div>
+                <label for="option">Motive</label>
+                <select name="option" id="" required>
+                  <option value="Complaint">Complaint</option>
+                  <option value="Question">Question</option>
+                  <option value="Comment">Comment</option>
+                </select>
+              </div>
+              <div>
+                <textarea name="mensaje"  cols="30" rows="5" placeholder="Leave us a message!"></textarea>
+              </div>
+              <div>
+                <label for="agreement">I Agree with the terms</label>
+                <input type="checkbox" name="agreement" id="" value="1"  required>
+              </div>
+              <div>
+                <input type="reset" value="Reset">
+                <button type="submit">Send</button>
+              </div>
+            </fieldset>
+          </form>
+      </div>
+    </main>
+    <footer class="flex column">
+      <section id='footerLinks' class="flex">
+        <div >
+          <ul>
+            <li><a href="">FAQS</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div id='socialMedia'>
+          <ul>
+            <li><a href="">IG</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </div>
+      </section>
+      <div>
+        Copyright 2021 All rights reserved to ECorp.
+      </div>
+    </footer>
+  </body>
+</html>

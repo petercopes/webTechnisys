@@ -1,0 +1,116 @@
+*{
+    font-weight: 200;
+    margin: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    justify-content: space-between;
+}
+main{
+    height: 70% ;
+}
+header{
+    height: 12%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(22, 22, 22, 0.671);
+}
+header:hover{
+    background-color: rgba(209, 209, 209, 0.548);
+}
+
+header h1{
+    padding-left: 5px;
+    font-size: 50px;
+}
+nav{
+    width: 20vw;
+    justify-content: flex-end;
+}
+nav *{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+h1 a{
+    
+    color: rgba(22, 22, 22, 0.671);
+}
+nav ul{
+    width: 150px;
+}
+
+#tableCatalogue{
+    justify-content: center;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+table{
+    margin: 10px;
+}
+thead{
+    background-color: rgba(14, 14, 14, 0.671);
+    color: white;
+    font-weight: bold;
+}
+tr *{
+    padding: 5px;
+    
+}
+tbody tr{
+    background-color: rgba(165, 165, 165, 0.671);
+}
+#contactForm{
+    padding-bottom: 10px;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+form{
+    width: 40%;
+    align-self: center;
+    justify-content: center;
+    align-items:center ;
+}
+form div{
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.radio{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.radio *{
+    padding-right: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.329);
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+#footerLinks{
+    background-color: rgba(90, 90, 90, 0.13);
+    justify-content: space-evenly;
+}
+#footerLinks *{
+    padding:3px;
+}
