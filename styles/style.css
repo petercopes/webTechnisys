@@ -1,116 +1,231 @@
-*{
-    font-weight: 200;
-    margin: 0;
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
+* {
+  font-weight: 200;
+
+  list-style: none;
 }
-body{
-    height: 100vh;
-    justify-content: space-between;
+html {
+  font-size: 62.5%;
 }
-main{
-    height: 70% ;
+.space-around {
+  justify-content: space-around;
 }
-header{
-    height: 12%;
-    justify-content: space-between;
-    align-items: center;
-    color: rgba(22, 22, 22, 0.671);
+body {
+  margin: 0;
+  height: 100%;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
 }
-header:hover{
-    background-color: rgba(209, 209, 209, 0.548);
+main {
+  height: 60%;
+}
+header {
+  height: 12vh;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(22, 22, 22, 0.671);
+}
+header:hover {
+  background-color: rgba(209, 209, 209, 0.548);
 }
 
-header h1{
-    padding-left: 5px;
-    font-size: 50px;
+header h1 {
+  padding-left: 5px;
+  font-size: 5rem;
 }
-nav{
-    width: 20vw;
-    justify-content: flex-end;
+nav {
+  width: 20vw;
+  justify-content: flex-end;
 }
-nav *{
-    display: flex;
-    justify-content: space-evenly;
-
+nav * {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-a:hover{
-    color: white;
+header a:hover,
+footer a:hover {
+  color: white;
 }
-h1 a{
-    
-    color: rgba(22, 22, 22, 0.671);
+main a:hover {
+  color: rgba(209, 209, 209, 0.548);
 }
-nav ul{
-    width: 150px;
+h1 a {
+  color: rgba(22, 22, 22, 0.671);
 }
-
-#tableCatalogue{
-    justify-content: center;
-}
-h2{
-    font-size: 40px;
-    text-align: center;
-    margin: 5px 0 20px 0;
-}
-table{
-    margin: 10px;
-}
-thead{
-    background-color: rgba(14, 14, 14, 0.671);
-    color: white;
-    font-weight: bold;
-}
-tr *{
-    padding: 5px;
-    
-}
-tbody tr{
-    background-color: rgba(165, 165, 165, 0.671);
-}
-#contactForm{
-    padding-bottom: 10px;
-}
-.flex{
-    display: flex;
-}
-.column{
-    flex-direction: column;
-}
-form{
-    width: 40%;
-    align-self: center;
-    justify-content: center;
-    align-items:center ;
-}
-form div{
-    margin: 3px;
-    display: flex;
-    flex-direction: column;
-}
-.radio{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.radio *{
-    padding-right: 5px;
+nav ul {
+  width: 100%;
 }
 
-footer{
-    text-align: center;
-    background-color: rgba(192, 192, 192, 0.329);
-    justify-self: flex-end;
-    justify-content: space-between;
+#catalogue {
+  justify-content: center;
 }
-#footerLinks{
-    background-color: rgba(90, 90, 90, 0.13);
-    justify-content: space-evenly;
+.productList {
+  margin: 2%;
 }
-#footerLinks *{
-    padding:3px;
+.productItem {
+  margin: 2%;
+}
+.productImage {
+  width: 100%;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+.productInfo h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.product {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px 40px 20px 20px;
+}
+.closeLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 57%;
+  margin: 0 10px 0 0;
+}
+.imageSidebar {
+  width: 1px;
+  margin: 0 10px;
+  background-color: rgba(201, 201, 201, 0.527);
+}
+.imgWrapper .bigImg {
+  height: 100%;
+}
+.infoWrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 5px;
+  text-align: start;
+}
+.infoWrapper h2 {
+  text-align: start;
+}
+.productDescription,
+.seeMore {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+p.buy {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+p.productPrice {
+  font-size: 1.8rem;
+  text-align: start;
+}
+.sizes {
+  margin: 10px 0 0 0;
+  padding: 5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.sizes li {
+  padding: 2px 0;
+  font-size: 1.2rem;
+}
+
+.sizes li:hover {
+  background-color: rgba(194, 194, 194, 0.534);
+}
+.infoWrapper h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+.buy {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.829);
+  color: white;
+  padding: 10px 5px;
+  width: 100%;
+  align-self: center;
+  margin-top: 20px;
+}
+p.buy {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.sizeChartContainer {
+  padding: 2%;
+  align-items: center;
+}
+table {
+  margin: 10px;
+}
+thead {
+  background-color: rgba(14, 14, 14, 0.671);
+  color: white;
+  font-weight: bold;
+}
+tr * {
+  padding: 5px;
+}
+tbody tr {
+  background-color: rgba(165, 165, 165, 0.671);
+}
+#contactForm {
+  padding-bottom: 10px;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.aboutInfo {
+  padding: 10%;
+  font-size: 2rem;
+}
+form {
+  width: 40%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+form div {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.radio * {
+  padding-right: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(192, 192, 192, 0.329);
+  justify-content: space-between;
+}
+#footerLinks {
+  font-size: 1.5rem;
+  background-color: rgba(90, 90, 90, 0.13);
+  justify-content: space-evenly;
+}
+#footerLinks * {
+  padding: 3px;
 }
