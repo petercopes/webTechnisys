@@ -63,9 +63,27 @@ nav ul {
   justify-content: center;
 }
 .productList {
+  justify-items: center;
+  display: grid;
+  grid-template-areas:
+    "producto1 producto2"
+    "producto3 producto4";
   margin: 2%;
 }
+#producto1 {
+  grid-area: producto1;
+}
+#producto2 {
+  grid-area: producto2;
+}
+#producto3 {
+  grid-area: producto3;
+}
+#producto3 {
+  grid-area: producto4;
+}
 .productItem {
+  width: 50%;
   margin: 2%;
 }
 .productImage {
@@ -76,8 +94,16 @@ h2 {
   text-align: center;
   margin: 5px 0 20px 0;
 }
+.productInfo {
+  justify-content: space-between;
+  align-items: center;
+}
+.productInfo a {
+  width: 75%;
+}
 .productInfo h3 {
-  font-size: 2rem;
+  margin: 5% 0;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .product {
