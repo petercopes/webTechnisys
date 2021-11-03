@@ -3,6 +3,9 @@
 
   list-style: none;
 }
+.center {
+  justify-content: center;
+}
 html {
   font-size: 62.5%;
 }
@@ -100,20 +103,7 @@ nav a:hover {
   margin: 2%;
 }
 
-#producto1 {
-  grid-area: producto1;
-}
-#producto2 {
-  grid-area: producto2;
-}
-#producto3 {
-  grid-area: producto3;
-}
-#producto3 {
-  grid-area: producto4;
-}
 .productItem {
-  width: 50%;
   margin: 2%;
 }
 .productImage {
@@ -122,6 +112,9 @@ nav a:hover {
 }
 .productImage:hover {
   transform: scale(1.1, 1.1);
+}
+#carouselExampleControls img {
+  height: 600px;
 }
 h2 {
   font-size: 4rem;

@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../../styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,28 +33,43 @@
         <h2>Contact Us</h2>
         <form action="" method="get" class="flex column">
           <fieldset>
-            <legend>Contact Form</legend>
             <div>
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name" required />
+              <label for="name" class="form-label">Name:</label>
+              <input
+                class="form-control"
+                class="form-control"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
             </div>
             <div>
-              <label for="email">Email:</label>
-              <input type="text" name="email" id="email" required />
+              <label for="email" class="form-label">Email:</label>
+              <input
+                class="form-control"
+                class="form-control"
+                type="text"
+                name="email"
+                id="email"
+                required
+              />
             </div>
             <div>
-              <label for="subscribe">Subscribe:</label>
+              <label for="subscribe" class="form-label">Subscribe:</label>
               <div class="flex radio">
                 <label for="yesSub">Yes</label>
                 <input
+                  class="form-check-input"
                   type="radio"
                   name="subscribe"
                   value="yes"
                   id="yesSub"
                   required
                 />
-                <label for="noSub">No</label>
+                <label for="noSub" class="form-label">No</label>
                 <input
+                  class="form-check-input"
                   type="radio"
                   name="subscribe"
                   value="no"
@@ -58,12 +79,18 @@
               </div>
             </div>
             <div>
-              <label for="phone">Phone:</label>
-              <input type="tel" name="phone" id="phone" required />
+              <label for="phone" class="form-label">Phone:</label>
+              <input
+                class="form-control"
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+              />
             </div>
             <div>
-              <label for="option">Motive</label>
-              <select name="option" id="" required>
+              <label for="option" class="form-label">Motive</label>
+              <select class="form-select" name="option" id="" required>
                 <option value="Complaint">Complaint</option>
                 <option value="Question">Question</option>
                 <option value="Comment">Comment</option>
@@ -74,12 +101,14 @@
                 name="mensaje"
                 cols="30"
                 rows="5"
+                class="form-control"
                 placeholder="Leave us a message!"
               ></textarea>
             </div>
-            <div>
-              <label for="agreement">I Agree with the terms</label>
+            <div class="flex">
+              <label for="agreement" form-label>I Agree with the terms</label>
               <input
+                class="form-check-input"
                 type="checkbox"
                 name="agreement"
                 id=""
@@ -88,8 +117,8 @@
               />
             </div>
             <div>
-              <input type="reset" value="Reset" />
-              <button type="submit">Send</button>
+              <input class="btn btn-light m-3" type="reset" value="Reset" />
+              <button class="btn btn-light m-3" type="submit">Send</button>
             </div>
           </fieldset>
         </form>
@@ -114,5 +143,10 @@
       </section>
       <div>Copyright 2021 All rights reserved to ECorp.</div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

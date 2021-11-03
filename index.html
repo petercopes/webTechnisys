@@ -2,6 +2,12 @@
 <html lang="es">
   <head>
     <title>Le Homme</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +31,50 @@
     </header>
     <main>
       <h2>Welcome to Le Homme's Official Website</h2>
-      <section>
+      <section class="flex center">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide container m-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container flex center">
+                <img src="images/home1.jpg" class="d-block" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container flex center">
+                <img src="images/home2.jpg" class="d-block" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container flex center">
+                <img src="images/home3.jpg" class="d-block" alt="..." />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- 
         <div class="flex mainImgWrapper">
           <div class="shopButton">
             <a href="screens/products/index.html">SHOP ALL</a>
@@ -33,7 +82,7 @@
           <div class="flex mainImg">
             <img src="images/homeImage2.jpg" alt="" />
           </div>
-        </div>
+        </div> -->
       </section>
     </main>
     <footer class="flex column">
@@ -55,5 +104,10 @@
       </section>
       <div>Copyright 2021 All rights reserved to ECorp.</div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
