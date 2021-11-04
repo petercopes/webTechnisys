@@ -1,0 +1,48 @@
+header {
+  height: 12vh;
+  justify-content: space-between;
+  align-items: center;
+  color: $dark-grey;
+}
+header:hover {
+  background-color: $light-grey;
+}
+
+header h1 {
+  padding-left: 5px;
+  font-size: 5rem;
+}
+nav {
+  width: 20vw;
+  justify-content: flex-end;
+}
+nav * {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover,
+footer a:hover {
+  color: white;
+}
+main a:hover {
+  color: $light-grey;
+}
+h1 a {
+  color: $dark-grey;
+}
+nav ul {
+  padding: 0;
+  width: 100%;
+}
+nav a {
+  margin: 5px;
+  transition: transform 0.5s;
+}
+nav a:hover {
+  transform: scale(1.2);
+}

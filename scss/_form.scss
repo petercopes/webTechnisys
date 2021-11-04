@@ -1,0 +1,19 @@
+form {
+  width: 40%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+form div {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.radio * {
+  padding-right: 5px;
+}

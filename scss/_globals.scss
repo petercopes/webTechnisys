@@ -1,0 +1,50 @@
+$dark-grey: rgba(22, 22, 22, 0.671);
+$light-grey: rgba(209, 209, 209, 0.548);
+
+* {
+  font-weight: 200;
+
+  list-style: none;
+}
+.center {
+  justify-content: center;
+}
+html {
+  font-size: 62.5%;
+}
+.space-around {
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+
+table {
+  margin: 10px;
+}
+thead {
+  background-color: rgba(14, 14, 14, 0.671);
+  color: white;
+  font-weight: bold;
+}
+tr * {
+  padding: 5px;
+}
+tbody tr {
+  background-color: rgba(165, 165, 165, 0.671);
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}

@@ -1,0 +1,22 @@
+#catalogue {
+  justify-content: center;
+}
+.productList {
+  justify-items: center;
+  display: grid;
+  grid-template-areas:
+    "producto1 producto2"
+    "producto3 producto4";
+  margin: 2%;
+}
+
+.productItem {
+  margin: 2%;
+}
+.productImage {
+  width: 100%;
+  transition: transform 1.5s;
+}
+.productImage:hover {
+  transform: scale(1.1, 1.1);
+}

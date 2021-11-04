@@ -1,0 +1,101 @@
+.productInfo {
+  justify-content: space-between;
+  align-items: center;
+}
+.productInfo a {
+  width: 75%;
+}
+.productInfo h3 {
+  margin: 5% 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px 40px 20px 20px;
+}
+.closeLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 57%;
+  margin: 0 10px 0 0;
+}
+.imageSidebar {
+  width: 1px;
+  margin: 0 10px;
+  background-color: rgba(201, 201, 201, 0.527);
+}
+.imgWrapper .bigImg {
+  height: 100%;
+}
+.infoWrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 5px;
+  text-align: start;
+}
+.infoWrapper h2 {
+  text-align: start;
+}
+.productDescription,
+.seeMore {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+p.buy {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+p.productPrice {
+  font-size: 1.8rem;
+  text-align: start;
+}
+.sizes {
+  margin: 10px 0 0 0;
+  padding: 5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.sizes li {
+  padding: 2px 0;
+  font-size: 1.2rem;
+}
+
+.sizes li:hover {
+  background-color: rgba(194, 194, 194, 0.534);
+}
+.infoWrapper h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+.buy {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.829);
+  color: white;
+  padding: 10px 5px;
+  width: 100%;
+  align-self: center;
+  margin-top: 20px;
+}
+p.buy {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.sizeChartContainer {
+  padding: 2%;
+  align-items: center;
+}
