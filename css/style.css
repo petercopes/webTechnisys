@@ -22,6 +22,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (min-width: 768px) {
+  main {
+    min-height: 80vh;
+  }
+}
 h2 {
   font-size: 4rem;
   text-align: center;
@@ -303,11 +308,6 @@ p.buy {
   font-size: 2rem;
 }
 
-@media (min-width: 768px) {
-  main {
-    min-height: 70vh;
-  }
-}
 form {
   width: 40%;
   align-self: center;

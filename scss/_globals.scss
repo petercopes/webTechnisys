@@ -1,7 +1,7 @@
 $dark-grey: rgba(22, 22, 22, 0.671);
 $light-grey: rgba(209, 209, 209, 0.548);
-$screenWidth:100%;
-$screenHeight:100vh;
+$screenWidth: 100%;
+$screenHeight: 100vh;
 * {
   font-weight: 200;
 
@@ -22,6 +22,11 @@ body {
   height: 100%;
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 768px) {
+  main {
+    min-height: $screenHeight * 0.8;
+  }
 }
 h2 {
   font-size: 4rem;
