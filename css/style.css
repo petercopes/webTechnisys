@@ -63,6 +63,7 @@ tbody tr {
 }
 
 .shopButton {
+  z-index: 4;
   position: absolute;
   top: 60%;
   left: 50%;
