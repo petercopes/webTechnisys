@@ -1,23 +1,25 @@
-
 header {
   height: 12vh;
   justify-content: space-between;
   align-items: center;
   color: $dark-grey;
 }
+h1 {
+  padding-left: 3%;
+}
 header:hover {
   background-color: $light-grey;
 }
-nav{
-  width: $screenWidth*0.5;
+nav {
+  width: $screenWidth * 0.5;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   header h1 {
-    padding-left: 5px;
+    padding-left: 15px;
     font-size: 5rem;
   }
-  nav{
-    width: $screenWidth*0.3;
+  nav {
+    width: $screenWidth * 0.3;
   }
   nav * {
     font-size: 1.5rem;
@@ -25,12 +27,13 @@ nav{
 }
 
 nav {
-
   justify-content: flex-end;
 }
 nav * {
+  align-content: center;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 a {
   text-decoration: none;

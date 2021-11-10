@@ -29,11 +29,14 @@ body {
   }
 }
 h2 {
-  font-size: 4rem;
   text-align: center;
   margin: 5px 0 20px 0;
 }
-
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
 table {
   margin: 10px;
 }
@@ -45,6 +48,7 @@ thead {
 tr * {
   padding: 5px;
 }
+
 tbody tr {
   background-color: rgba(165, 165, 165, 0.671);
 }
