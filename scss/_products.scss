@@ -3,13 +3,11 @@
 }
 .productList {
   justify-items: center;
-  display: grid;
-  grid-template-areas:
-    "producto1 producto2"
-    "producto3 producto4";
-  margin: 2%;
 }
-
+#productsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
 .productItem {
   padding: 2%;
 }
