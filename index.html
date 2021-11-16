@@ -30,7 +30,23 @@
       </nav>
     </header>
     <main>
-      <h2 id='welcomeText'>Welcome to Le Homme's Official Website</h2>
+      <div class="welcomeModal" id="welcomeModal">
+        <div class="containerModal flex column">
+          <div class="closeLogo m-2" id="closeLogo">
+            <img src="images/close.svg" alt="Close Navigation " />
+          </div>
+          <div class="flex column m-2">
+            <form action="" id="welcomeForm">
+              <label for="email" class="m-2"
+                >Subscribe to our newsletter to get the best offers</label
+              >
+              <input type="email" name="email" id="emailNewsletter" />
+              <button type="submit" class="m-2">Subscribirse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h2 id="welcomeText">Welcome to Le Homme's Official Website</h2>
       <section class="flex center">
         <div
           id="carouselExampleControls"
