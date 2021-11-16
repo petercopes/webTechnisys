@@ -43,7 +43,7 @@ function createProductDiv (product) {
   return productDiv;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+$('document').ready(() => {
   for (const product of mockdata) {
     productDiv = createProductDiv(product);
     container.appendChild(productDiv);
