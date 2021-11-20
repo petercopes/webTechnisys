@@ -30,3 +30,11 @@ $('document').ready(()=>{
     }
 });
 
+$('header').on('mouseenter',()=>{
+    $('header').css({"background-color": "rgba(209, 209, 209, 0.548)"});
+   
+  });
+  $('header').on('mouseleave',()=>{
+    $('header').css({"background-color": "transparent"});
+
+  });

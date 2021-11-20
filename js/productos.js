@@ -1,18 +1,6 @@
-class Product {
-  static id = 0;
-  constructor(name, price,imageSrc) {
-    this.prodId = ++Product.id;
-    this.name = name;
-    this.price = price;
-    this.imageSrc = imageSrc;
-  }
-}
+
 const container = document.getElementById("productsContainer");
-const prod1 = new Product("SUDADERA LAVADA", 5499, "../../images/suda1.jpg");
-const prod2 = new Product("CAMISA NEGRA", 5599,"../../images/camisa2.jpg");
-const prod3 = new Product("JOGGER LAVADO", 3599,"../../images/pant2.jpg");
-const prod4 = new Product("PANTALON NEGRO", 9499,"../../images/pant1.jpg");
-const mockdata = [prod1, prod2, prod3, prod4];
+
 function createProductDiv (product) {
   let productDiv = document.createElement('div');
   productDiv.classList.add("col-sm-12");
@@ -43,8 +31,9 @@ function createProductDiv (product) {
   return productDiv;
 }
 
-$('document').ready(() => {
-  for (const product of mockdata) {
+$('document').ready(async() => {
+  const productos = await $.get('https://60d8bcffeec56d00174774a8.mockapi.io/productos');
+  for (const product of productos) {
     productDiv = createProductDiv(product);
     container.appendChild(productDiv);
     
