@@ -29,4 +29,7 @@ $('document').ready(()=>{
         }
     }
 });
+$(nav).on('hover',()=>{
+    
+})
 
